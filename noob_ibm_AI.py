@@ -28,7 +28,10 @@ table_names = []
 for d in lf:
     table_names.append(d)
     
-df = pd.DataFrame(nx, columns= table_names)    
+df = pd.DataFrame(nx, columns= table_names)
+
+for i in table_names:
+    print(df[i][0])
     
 Names = []
 pNumbers = []
